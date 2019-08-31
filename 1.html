@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Are you lucky</h1>
+<h3>Enter range of your number :</h3> From <input id="num1" type="text"> To <input id="num2" type="text"> <br/><br/>
+<h3>Enter your number</h3> <input id="num" type="text"><br/><br/>
+<input type="button" id="play" value="Play" onclick="clickPlay();">
+<script>
+
+
+    /*var min=1;
+    var max=5;
+    var random = Math.random() * (+max - +min) + +min;
+    document.write("Random Number Generated : " + random );
+*/
+
+    function clickPlay() {
+
+
+        let count = 0;
+        let num = document.getElementById('num').value;
+        let min = parseInt(document.getElementById('num1').value);
+        let max = parseInt(document.getElementById('num2').value);
+        var x = Math.floor(Math.random() * (max - min) + +min);
+        document.write(x);
+
+        /*if (num === x) {
+            document.write("WOW...You're so lucky !!!");
+        }
+        if (num !== x && num > x) {
+            document.write("Sorry, Your number is greater than us number !", "<br/>", "Choose Again !");
+            count++;
+            //while (count < 3) {
+            // min = " ";
+            // max = " ";
+            // }
+            document.write("YOU LOSING THE GAME");
+        }
+        if (num !== x && num < x) {
+            document.write("Sorry, Your number is less than us number !", "<br/>", "Choose Again !");
+            count ++;
+            //while (count < 3) {
+
+            // }
+            document.write("YOU LOSING THE GAME")
+        }*/
+
+    }
+</script>
+</body>
+</html>
